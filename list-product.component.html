@@ -1,0 +1,23 @@
+<table>
+    
+    <tr>
+        <th>ID</th><th>Price</th><th>Stock</th>
+    </tr>
+
+    <tr *ngFor="let p of products">
+            <td>{{p.id}}</td>
+            <td>{{p.name}}</td>
+            <td>{{p.price}}</td>
+            <td>{{p.stock}}</td>
+    </tr>
+
+    <tr>
+        <td colspan="4">
+                <button (click)="prev()">&lt,&lt;</button>  //entity
+
+                <button (click)="next()">&gt,&gt;</button>   //entity
+        </td>
+
+
+    </tr>
+</table>
